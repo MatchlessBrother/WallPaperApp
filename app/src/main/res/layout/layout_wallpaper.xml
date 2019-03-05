@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/shape_round_rect_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="12mm"
+    android:paddingLeft="12mm">
+
+    <TextView
+        android:textColor="@color/default_font_black"
+        android:layout_height="wrap_content"
+        android:text="@string/setwallpaper"
+        android:id="@+id/wallpaper_title"
+        android:layout_width="500mm"
+        android:paddingBottom="22mm"
+        android:paddingRight="20mm"
+        android:paddingLeft="20mm"
+        android:paddingTop="22mm"
+        android:singleLine="true"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:textColor="@color/default_font_black"
+        android:id="@+id/wallpaper_homescreen"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/homescreen"
+        android:paddingBottom="18mm"
+        android:paddingRight="20mm"
+        android:paddingLeft="20mm"
+        android:paddingTop="18mm"
+        android:singleLine="true"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:textColor="@color/default_font_black"
+        android:id="@+id/wallpaper_lockscreen"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/lockscreen"
+        android:paddingBottom="18mm"
+        android:paddingRight="20mm"
+        android:paddingLeft="20mm"
+        android:paddingTop="18mm"
+        android:singleLine="true"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:textColor="@color/default_font_black"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/bothscreen"
+        android:id="@+id/wallpaper_both"
+        android:paddingBottom="22mm"
+        android:paddingRight="20mm"
+        android:paddingLeft="20mm"
+        android:paddingTop="18mm"
+        android:singleLine="true"
+        android:textSize="30sp"/>
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+
+    <!--##########防止启动App时,出现长时间的白屏/黑屏##########-->
+    <style name="AppTheme.FirstPage" parent="AppTheme">
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <!--##########防止启动App时,出现长时间的白屏/黑屏##########-->
+    <style name="AppTheme.SecondPage" parent="AppTheme">
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+</resources>

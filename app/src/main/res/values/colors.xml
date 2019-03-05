@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   <!-- <color name="colorPrimaryDark">#FF199EE0</color>
+    <color name="colorPrimary">#FF199EE0</color>
+    <color name="colorAccent">#FF0093DD</color>-->
+    <color name="colorPrimaryDark">#FF000000</color>
+    <color name="colorPrimary">#FF000000</color>
+    <color name="colorAccent">#FF888888</color>
+    <!-- ***************************************** -->
+    <color name="sign_background">#16675C</color>
+    <color name="default_font_gray">#FF666666</color>
+    <color name="default_font_hint">#FFBBBBBB</color>
+    <color name="default_font_black">#FF333333</color>
+    <color name="default_divide_line">#CCEDEDED</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="default_background_gray">#FFF2F2F2</color>
+
+</resources>

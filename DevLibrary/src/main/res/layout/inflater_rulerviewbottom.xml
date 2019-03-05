@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <HorizontalScrollView
+        android:id="@+id/ruler_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scrollbars="none"
+        android:background="@android:color/white" >
+        
+        <LinearLayout
+        	android:id="@+id/ruler_ll"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal"
+            android:background="@android:color/white"/>
+        
+    </HorizontalScrollView>
+</RelativeLayout>

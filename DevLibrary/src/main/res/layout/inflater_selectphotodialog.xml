@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:orientation="vertical"
+    android:background="@color/transparent">
+
+    <TextView
+        android:id="@+id/selectphotodialog_camera"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:paddingBottom="4dp"
+        android:paddingTop="8dp"
+        android:text="拍&#160;&#160;&#160;&#160;照"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:background="@drawable/bg_whiteupbtn"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFDDDDDD" />
+
+    <TextView
+        android:id="@+id/selectphotodialog_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="4dp"
+        android:text="从相册选取"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:background="@drawable/bg_whitedownbtn"/>
+
+    <TextView
+        android:id="@+id/selectphotodialog_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="取&#160;&#160;&#160;&#160;消"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray"
+        android:background="@drawable/bg_whiteallbtn" />
+
+</LinearLayout>

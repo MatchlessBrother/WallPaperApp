@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_title" />
+
+    <FrameLayout
+        android:id="@+id/previewphoto_content"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/previewphoto_photoview"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"/>
+
+        <RelativeLayout
+            android:id="@+id/img_all"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="80mm"
+                android:layout_height="80mm"
+                android:id="@+id/img_wallpaper"
+                android:layout_marginRight="40mm"
+                android:layout_marginBottom="160mm"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                app:srcCompat="@drawable/icon_wallpaper"/>
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:layout_width="80mm"
+                android:layout_height="80mm"
+                android:id="@+id/img_download"
+                android:layout_marginBottom="50mm"
+                app:srcCompat="@drawable/icon_download"
+                android:layout_above="@id/img_wallpaper"
+                android:layout_alignRight="@id/img_wallpaper"/>
+
+            <CheckBox
+                android:button="@null"
+                android:checked="false"
+                android:layout_width="80mm"
+                android:layout_height="80mm"
+                android:id="@+id/img_favorite"
+                android:layout_marginBottom="50mm"
+                android:layout_above="@id/img_download"
+                android:layout_alignRight="@id/img_wallpaper"
+                android:background="@drawable/selector_whitered_love"/>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

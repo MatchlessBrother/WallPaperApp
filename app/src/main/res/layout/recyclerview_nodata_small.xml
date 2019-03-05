@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:textSize="36sp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginBottom="20sp"
+        android:layout_width="match_parent"
+        android:text="点击下方图片进行刷新！"
+        android:layout_height="wrap_content"
+        android:textColor="@color/default_font_hint"/>
+
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_width="144pt"
+        android:layout_height="144sp"
+        android:layout_gravity="center"
+        android:src="@mipmap/nodataicon"
+        android:id="@+id/recyclerview_refreshbtn"/>
+
+    <TextView
+        android:textSize="36sp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:layout_marginTop="20sp"
+        android:text="没有数据可以显示哟！"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/default_font_gray"/>
+</LinearLayout>

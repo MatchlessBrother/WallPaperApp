@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="0mm"
+        android:layout_height="0mm"
+        android:focusableInTouchMode="true" />
+
+    <RelativeLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="96mm"
+        android:id="@+id/titlebar">
+
+        <LinearLayout
+            android:layout_width="200mm"
+            android:layout_marginLeft="22mm"
+            android:layout_marginRight="8mm"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|left">
+
+            <ImageButton
+                android:scaleType="fitXY"
+                android:layout_width="44mm"
+                android:layout_height="44mm"
+                android:id="@+id/titlebar_back"
+                android:src="@mipmap/title_back"
+                android:background="@color/transparent"/>
+
+            <TextView
+                tools:text="川岛芳子"
+                android:textSize="30sp"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:layout_marginLeft="4mm"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:id="@+id/titlebar_back_note"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"/>
+        </LinearLayout>
+
+        <TextView
+            android:text="标题"
+            android:textSize="38sp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:visibility="gone"
+            android:textColor="@color/white"
+            android:layout_marginLeft="144mm"
+            android:layout_marginRight="144mm"
+            android:id="@+id/titlebar_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <EditText
+            android:textSize="28sp"
+            android:inputType="text"
+            android:singleLine="true"
+            android:paddingLeft="20mm"
+            android:paddingRight="20mm"
+            android:layout_marginTop="20mm"
+            android:imeOptions="actionSearch"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="144mm"
+            android:layout_marginBottom="20mm"
+            android:hint="@string/search_note"
+            android:layout_marginRight="144mm"
+            android:id="@+id/titlebar_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/default_font_black"
+            android:textColorHint="@color/default_font_gray"
+            android:background="@drawable/shape_round_rect_white"/>
+
+        <LinearLayout
+            android:layout_width="200mm"
+            android:layout_marginLeft="8mm"
+            android:orientation="horizontal"
+            android:layout_marginRight="22mm"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical|right">
+
+            <TextView
+                android:text="完成"
+                android:textSize="30sp"
+                android:singleLine="true"
+                android:visibility="gone"
+                android:layout_height="44mm"
+                android:textColor="@color/white"
+                android:gravity="center_vertical"
+                android:id="@+id/titlebar_morefont"
+                android:layout_width="wrap_content"/>
+
+            <ImageButton
+                android:scaleType="fitXY"
+                android:visibility="gone"
+                android:src="@mipmap/slide"
+                android:layout_width="44mm"
+                android:layout_height="44mm"
+                android:id="@+id/titlebar_moreicon"
+                android:background="@color/transparent"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swiperefreshlayout"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:requiresFadingEdge="none"
+            android:id="@+id/recyclerView"
+            android:fadingEdgeLength="0dp"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>

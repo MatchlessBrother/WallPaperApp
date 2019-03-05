@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/shape_rect_round_white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingRight="20mm"
+    android:paddingLeft="20mm">
+
+    <TextView
+        android:gravity="center_vertical|left"
+        android:id="@+id/updatedialog_title"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="正在更新，请稍等..."
+        android:textColor="#FF666666"
+        android:paddingBottom="16mm"
+        android:paddingTop="30mm"
+        android:singleLine="true"
+        android:textSize="28sp"/>
+
+    <com.daimajia.numberprogressbar.NumberProgressBar
+        app:progress_unreached_color="@color/default_font_gray"
+        app:progress_reached_color="@color/colorPrimaryDark"
+        app:progress_text_color="@color/colorPrimaryDark"
+        android:id="@+id/updatedialog_progressbar"
+        style="@style/NumberProgressBar_Default"
+        app:progress_unreached_bar_height="2mm"
+        app:progress_reached_bar_height="4mm"
+        app:progress_text_visibility="visible"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="30mm"
+        android:layout_marginTop="20mm"
+        app:progress_text_offset="0dp"
+        app:progress_text_size="22sp"/>
+
+</LinearLayout>

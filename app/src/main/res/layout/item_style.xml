@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="12mm"
+    android:background="@color/white"
+    android:layout_marginRight="8mm"
+    android:layout_marginLeft="8mm"
+    android:layout_marginTop="12mm"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/item_style_img"/>
+
+    <LinearLayout
+        android:background="@drawable/shape_style_bottom"
+        android:gravity="center_vertical|left"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="18mm"
+        android:paddingRight="12mm"
+        android:paddingLeft="12mm"
+        android:paddingTop="18mm">
+
+        <TextView
+            android:id="@+id/item_style_description"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            tools:text="小清新风格"
+            android:textSize="26sp"/>
+
+        <ImageView
+            app:srcCompat="@drawable/icon_imgs"
+            android:layout_marginRight="4mm"
+            android:layout_marginLeft="8mm"
+            android:layout_height="30mm"
+            android:layout_width="30mm"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/item_style_imgnumber"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:singleLine="true"
+            android:textSize="30sp"
+            android:text="0"/>
+    </LinearLayout>
+</LinearLayout>
