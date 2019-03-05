@@ -20,6 +20,8 @@ android{
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        resConfigs "zh","de","cl","es","mx","fr","it","pl","br","ua"
+        //resConfigs "zh", "en", "de", "fr", "pl", "it", "es", "pt", "uk"
     }
 
     compileOptions{
