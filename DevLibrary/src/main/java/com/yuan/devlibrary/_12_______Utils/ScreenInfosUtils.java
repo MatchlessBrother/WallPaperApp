@@ -63,7 +63,7 @@ public class ScreenInfosUtils
     /************************判定状态栏是否显示***********************/
     public static boolean isShowStatusBar(Activity context)
     {
-        return (context.getWindow().getAttributes().flags & WindowManager.LayoutParams.FLAG_FULLSCREEN) == 0 ? true : false;
+        return (context.getWindow().getAttributes().flags & WindowManager.LayoutParams.FLAG_FULLSCREEN) == 0;
     }
 
     /**************获取状态栏高度（在初始化界面之前）*****************/
@@ -87,7 +87,7 @@ public class ScreenInfosUtils
     /****************判定标题栏是否显示(有问题,不准确)****************/
     public static boolean isShowTitleBar(Activity activity)
     {
-        return activity.getWindow().hasFeature(Window.FEATURE_NO_TITLE) ? false : true;
+        return !activity.getWindow().hasFeature(Window.FEATURE_NO_TITLE);
     }
 
     /********获取标题栏高度(必须在Activity显示之后才能正确获取)*******/
@@ -123,19 +123,13 @@ public class ScreenInfosUtils
         if (Build.VERSION.SDK_INT > 11 && Build.VERSION.SDK_INT < 19)
         {
             View v = activity.getWindow().getDecorView();
-            if((v.getSystemUiVisibility() & View.GONE) == View.GONE)
-                return true;
-            else
-                return false;
+            return (v.getSystemUiVisibility() & View.GONE) == View.GONE;
         }
         else if (Build.VERSION.SDK_INT >= 19)
         {
             View decorView = activity.getWindow().getDecorView();
             int uiOptions = View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY | View.SYSTEM_UI_FLAG_FULLSCREEN | View.STATUS_BAR_HIDDEN;
-            if((decorView.getSystemUiVisibility() & uiOptions) == uiOptions)
-                return true;
-            else
-                return false;
+            return (decorView.getSystemUiVisibility() & uiOptions) == uiOptions;
         }
         else
             return false;
@@ -165,10 +159,7 @@ public class ScreenInfosUtils
         {
             boolean menu = ViewConfiguration.get(context).hasPermanentMenuKey();
             boolean back = KeyCharacterMap.deviceHasKey(KeyEvent.KEYCODE_BACK);
-            if(menu || back)
-                return false;
-            else
-                return true;
+            return !(menu || back);
         }
     }
 

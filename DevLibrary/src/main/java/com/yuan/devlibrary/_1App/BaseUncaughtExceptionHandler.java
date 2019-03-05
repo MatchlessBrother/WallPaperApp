@@ -111,10 +111,10 @@ public class BaseUncaughtExceptionHandler implements Thread.UncaughtExceptionHan
 
         View view = LayoutInflater.from(mApplication.getCurrentActivity()).inflate(R.layout.inflater_crashdialogdefaultone, null);
         alertDialog.setContentView(view);
-        TextView content = (TextView)view.findViewById(R.id.crashdialog_content);
+        TextView content = view.findViewById(R.id.crashdialog_content);
         content.setText(contentStr.trim());
         content.setTextColor(mApplication.getCurrentActivity().getResources().getColor(contentStrColor));
-        TextView complete = (TextView)view.findViewById(R.id.crashdialog_complete);
+        TextView complete = view.findViewById(R.id.crashdialog_complete);
         complete.setText(btnStr.trim());
         complete.setTextColor(mApplication.getCurrentActivity().getResources().getColor(btnStrColor));
         complete.setOnClickListener(new View.OnClickListener()
@@ -144,14 +144,14 @@ public class BaseUncaughtExceptionHandler implements Thread.UncaughtExceptionHan
 
         View view = LayoutInflater.from(mApplication.getCurrentActivity()).inflate(R.layout.inflater_crashdialogdefaulttwo, null);
         alertDialog.setContentView(view);
-        TextView title = (TextView)view.findViewById(R.id.crashdialog_title);
+        TextView title = view.findViewById(R.id.crashdialog_title);
         title.setText(titleStr.trim());
         title.setBackgroundResource(titleBgColor);
         title.setTextColor(mApplication.getCurrentActivity().getResources().getColor(titleStrColor));
-        TextView content = (TextView)view.findViewById(R.id.crashdialog_content);
+        TextView content = view.findViewById(R.id.crashdialog_content);
         content.setText(contentStr.trim());
         content.setTextColor(mApplication.getCurrentActivity().getResources().getColor(contentStrColor));
-        TextView complete = (TextView)view.findViewById(R.id.crashdialog_complete);
+        TextView complete = view.findViewById(R.id.crashdialog_complete);
         complete.setText(btnStr.trim());
         complete.setTextColor(mApplication.getCurrentActivity().getResources().getColor(btnStrColor));
         complete.setOnClickListener(new View.OnClickListener()

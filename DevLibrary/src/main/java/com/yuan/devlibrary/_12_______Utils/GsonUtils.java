@@ -16,7 +16,7 @@ public class GsonUtils
     }
 
     /************通过指定的jsonString字符串和指定的类名得到类对象*********/
-    public static <T> T getObj(java.lang.String jsonString, Class<T> clazz)
+    public static <T> T getObj(String jsonString, Class<T> clazz)
     {
         T t = null;
         try
@@ -55,7 +55,7 @@ public class GsonUtils
 
     /*****通过指定的mapJsonString字符串和指定的类类型得到类对象Map集合*****
      ******其实这个方法还可以获取到更多类型的数据,自行扩展吧！！！！！！***/
-    public static <T> T getMap(java.lang.String mapJsonString, Type type)
+    public static <T> T getMap(String mapJsonString, Type type)
     {
         Gson gson = new Gson();
         T    map  = (T) gson.fromJson(mapJsonString, type);

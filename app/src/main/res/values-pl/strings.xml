@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="style">Styl</string>
+	<string name="bothscreen">Obie</string>
+	<string name="app_name">Tapeta</string>
+	<string name="wallpaper">Tapeta</string>
+	<string name="app_name_dev">Tapeta</string>
+	<string name="homescreen">Ekran główny</string>
+	<string name="lockscreen">Ekran blokady</string>
+	<string name="action_settings">Ustawienia</string>
+	<string name="setwallpaper">Ustawić tapetę</string>
+	<string name="nodescription">Bez opisu!</string>
+	<string name="previewwallpaper">PodglądWallpaper</string>
+	<string name="unknownresolution">Nieznana rozdzielczość</string>
+	<string name="search_note">Wprowadź treść wyszukiwania</string>
+	<string name="cancelcollectiontips">Anuluj wskazówki dotyczące kolekcji!</string>
+	<string name="cancelcollectiontipscontent">Czy na pewno chcesz anulować tę kolekcję tapet?</string>
+	<string name="next">Kolejny</string>
+	<string name="isee">Widzę</string>
+	<string name="cancel">Anuluj</string>
+	<string name="setting">oprawa</string>
+	<string name="permissionprompt">Prośba o zezwolenie</string>
+	<string name="cancelwallpaperdownload">Anuluj pobieranie tapet!</string>
+	<string name="cancelwallpapersettings">Anuluj ustawienia tapety!</string>
+	<string name="failedtodownloadwallpaper">Nie udało się pobrać tapety!</string>
+	<string name="settingwallpapersuccessfully">Ustawianie tapety z powodzeniem!</string>
+	<string name="successfuldownloadofwallpaper">Pomyślne pobranie tapety!</string>
+	<string name="settinglockwallpapersuccessfully">Ustawianie tapety blokady pomyślnie!</string>
+	<string name="settingsystemwallpapersuccessfully">Ustawianie tapety systemowej z powodzeniem!</string>
+	<string name="downloadingwallpaper">Pobieranie aktualnej tapety, proszę czekać chwilę!</string>
+	<string name="errorsencounteredindownloadingwallpaper">Błędy napotkane podczas pobierania tapety!</string>
+	<string name="waitingfordownload">Aktualna tapeta czeka na pobranie, proszę poczekać chwilę!</string>
+	<string name="rationaleofpermission">Skorzystaj z tej funkcji wymagaj zgody na ZAPISYWANIE i ODCZYT, proszę udzielić tego pozwolenia w następnej kolejności!</string>
+	<string name="foreverrejectedofpermission">Użyj tej funkcji wymagającej zgody na ZAPISYWANIE i ODCZYT, proszę udzielić tego pozwolenia!</string>
+	<string name="rejectedofpermission">Użyj tej funkcji wymaga uprawnień WRITE i READ, w przeciwnym razie nie możesz korzystać z tej funkcji!</string>
+</resources>

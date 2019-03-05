@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="style">Style</string>
+	<string name="bothscreen">Both</string>
+	<string name="app_name">Wallpaper</string>
+	<string name="wallpaper">WallPaper</string>
+	<string name="app_name_dev">Wallpaper</string>
+	<string name="homescreen">Home screen</string>
+	<string name="lockscreen">Lock screen</string>
+	<string name="action_settings">Settings</string>
+	<string name="setwallpaper">Set Wallpaper</string>
+	<string name="nodescription">No Description!</string>
+	<string name="previewwallpaper">PreviewWallpaper</string>
+	<string name="unknownresolution">Unknown Resolution</string>
+	<string name="search_note">Please enter the search content</string>
+	<string name="cancelcollectiontips">Cancel Collection Tips!</string>
+	<string name="cancelcollectiontipscontent">Are you sure you want to cancel this wallpaper collection?</string>
+	<string name="next">Next</string>
+	<string name="isee">I see</string>
+	<string name="cancel">Cancel</string>
+	<string name="setting">setting</string>
+	<string name="permissionprompt">Permission prompt</string>
+	<string name="cancelwallpaperdownload">Cancel wallpaper download!</string>
+	<string name="cancelwallpapersettings">Cancel wallpaper settings!</string>
+	<string name="failedtodownloadwallpaper">Failed to download wallpaper!</string>
+	<string name="settingwallpapersuccessfully">Setting wallpaper successfully!</string>
+	<string name="successfuldownloadofwallpaper">Successful download of wallpaper!</string>
+	<string name="settinglockwallpapersuccessfully">Setting lock wallpaper successfully!</string>
+	<string name="settingsystemwallpapersuccessfully">Setting system wallpaper successfully!</string>
+	<string name="downloadingwallpaper">Downloading the current wallpaper, please wait a moment!</string>
+	<string name="errorsencounteredindownloadingwallpaper">Errors encountered in downloading wallpaper!</string>
+	<string name="waitingfordownload">The current wallpaper is waiting for download, please wait a moment!</string>
+	<string name="rationaleofpermission">Use this function need requires WRITE and READ grant permission,please grant this permission next!</string>
+	<string name="foreverrejectedofpermission">Use this function need requires WRITE and READ grant permission,please grant this permission!</string>
+	<string name="rejectedofpermission">Use this function need requires WRITE and READ grant permission,otherwise you can not use this function!</string>
+</resources>

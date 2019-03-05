@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="style">Стиль</string>
+	<string name="bothscreen">Обидва</string>
+	<string name="app_name">Шпалери</string>
+	<string name="wallpaper">Шпалери</string>
+	<string name="app_name_dev">Шпалери</string>
+	<string name="homescreen">Домашній екран</string>
+	<string name="lockscreen">Екран блокування</string>
+	<string name="action_settings">Налаштування</string>
+	<string name="setwallpaper">Встановити шпалери</string>
+	<string name="nodescription">Без опису!</string>
+	<string name="previewwallpaper">PreviewWallpaper</string>
+	<string name="unknownresolution">Невідома роздільна здатність</string>
+	<string name="search_note">Введіть вміст пошуку</string>
+	<string name="cancelcollectiontips">Скасувати поради щодо колекції!</string>
+	<string name="cancelcollectiontipscontent">Дійсно скасувати цю колекцію шпалер?</string>
+	<string name="next">Далі</string>
+	<string name="isee">я бачу</string>
+	<string name="cancel">Скасувати</string>
+	<string name="setting">налаштування</string>
+	<string name="permissionprompt">Запрошення дозволу</string>
+	<string name="cancelwallpaperdownload">Скасувати завантаження шпалер!</string>
+	<string name="cancelwallpapersettings">Скасувати налаштування шпалер!</string>
+	<string name="failedtodownloadwallpaper">Не вдалося завантажити шпалери!</string>
+	<string name="settingwallpapersuccessfully">Успішно налаштування шпалер!</string>
+	<string name="successfuldownloadofwallpaper">Успішне завантаження шпалер!</string>
+	<string name="settinglockwallpapersuccessfully">Встановлення блокування шпалер успішно!</string>
+	<string name="settingsystemwallpapersuccessfully">Налаштування шпалер системи успішно!</string>
+	<string name="downloadingwallpaper">Завантажуючи поточні шпалери, зачекайте!</string>
+	<string name="errorsencounteredindownloadingwallpaper">Помилки при завантаженні шпалер!</string>
+	<string name="waitingfordownload">Поточні шпалери чекають завантаження, будь ласка, зачекайте!</string>
+	<string name="rationaleofpermission">Використовуйте цю функцію потрібно вимагати WRITE і READ дозволу, будь ласка, надайте цей дозвіл наступного!</string>
+	<string name="foreverrejectedofpermission">Використовуйте цю функцію потрібно вимагає WRITE і READ дозволу, будь ласка, надайте цей дозвіл!</string>
+	<string name="rejectedofpermission">Використовувати цю функцію потрібно вимагати WRITE і READ дозволу, інакше не можна використовувати цю функцію!</string>
+</resources>

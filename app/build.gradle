@@ -12,6 +12,8 @@ android{
     buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig{
+        resConfigs "xhdpi"
+        ndk{abiFilters "armeabi"}
         flavorDimensions "default"
         vectorDrawables.useSupportLibrary = true
         applicationId "company.petrifaction.boss"
@@ -19,9 +21,8 @@ android{
         versionName  rootProject.ext.versionName
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
+        resConfigs "zh-rCN","uk","pt","pl","it","fr","es","en","de"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        resConfigs "zh","de","cl","es","mx","fr","it","pl","br","ua"
-        //resConfigs "zh", "en", "de", "fr", "pl", "it", "es", "pt", "uk"
     }
 
     compileOptions{
@@ -69,7 +70,7 @@ android{
             shrinkResources true
             /**配置签名密匙*/
             signingConfig signingConfigs.release
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
 
         debug{
@@ -81,7 +82,7 @@ android{
             shrinkResources false
             /**不用配置签名密匙*/
             signingConfig signingConfigs.debug
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
 

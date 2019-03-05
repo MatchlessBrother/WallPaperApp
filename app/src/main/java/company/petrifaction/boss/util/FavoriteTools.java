@@ -64,7 +64,7 @@ public class FavoriteTools
     public static void addPhotoDatas(Context context, List<PhotoData> photoDatas)
     {
         SharedPreferences sharedPreferences = context.getSharedPreferences(context.getPackageName(),Context.MODE_MULTI_PROCESS);
-        sharedPreferences.edit().putString("photodatas",GsonUtils.objectToGsonString(photoDatas)).apply();
+        sharedPreferences.edit().putString("photodatas", GsonUtils.objectToGsonString(photoDatas)).apply();
     }
 
     /**************************从本地Sp获取Favorite图片数据**********************/

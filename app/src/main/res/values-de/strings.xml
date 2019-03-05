@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="style">Stil</string>
+	<string name="bothscreen">Beide</string>
+	<string name="app_name">Tapete</string>
+	<string name="wallpaper">Tapete</string>
+	<string name="app_name_dev">Tapete</string>
+	<string name="homescreen">Startbildschirm</string>
+	<string name="lockscreen">Bildschirm sperren</string>
+	<string name="action_settings">die Einstellungen</string>
+	<string name="setwallpaper">Hintergrundbild festlegen</string>
+	<string name="nodescription">Keine Beschreibung!</string>
+	<string name="previewwallpaper">PreviewWallpaper</string>
+	<string name="unknownresolution">Unbekannte Auflösung</string>
+	<string name="search_note">Bitte geben Sie den Suchinhalt ein</string>
+	<string name="cancelcollectiontips">Sammeltipps abbrechen!</string>
+	<string name="cancelcollectiontipscontent">Möchten Sie diese Hintergrundsammlung wirklich abbrechen?</string>
+	<string name="next">Nächster</string>
+	<string name="isee">Aha</string>
+	<string name="cancel">Stornieren</string>
+	<string name="setting">Rahmen</string>
+	<string name="permissionprompt">Berechtigungsaufforderung</string>
+	<string name="cancelwallpaperdownload">Wallpaper-Download abbrechen!</string>
+	<string name="cancelwallpapersettings">Hintergrundeinstellungen abbrechen!</string>
+	<string name="failedtodownloadwallpaper">Wallpaper konnte nicht heruntergeladen werden!</string>
+	<string name="settingwallpapersuccessfully">Wallpaper erfolgreich einstellen!</string>
+	<string name="successfuldownloadofwallpaper">Wallpaper erfolgreich heruntergeladen!</string>
+	<string name="settinglockwallpapersuccessfully">Sperrbild erfolgreich einstellen!</string>
+	<string name="settingsystemwallpapersuccessfully">Systemhintergrund erfolgreich einstellen!</string>
+	<string name="downloadingwallpaper">Laden Sie das aktuelle Hintergrundbild herunter. Bitte warten Sie einen Moment!</string>
+	<string name="errorsencounteredindownloadingwallpaper">Beim Herunterladen des Hintergrunds sind Fehler aufgetreten!</string>
+	<string name="waitingfordownload">Das aktuelle Wallpaper wartet auf den Download, bitte warten Sie einen Moment!</string>
+	<string name="rationaleofpermission">Um diese Funktion nutzen zu können, müssen Sie die Berechtigung WRITE und READ erteilen.</string>
+	<string name="foreverrejectedofpermission">Um diese Funktion nutzen zu können, benötigen Sie die Erlaubnis von WRITE und READ, bitte erteilen Sie diese Erlaubnis!</string>
+	<string name="rejectedofpermission">Um diese Funktion nutzen zu können, benötigen Sie die Berechtigung WRITE und READ, ansonsten können Sie diese Funktion nicht verwenden!</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="style">Style</string>
+	<string name="bothscreen">Tous les deux</string>
+	<string name="app_name">Fond d`écran</string>
+	<string name="wallpaper">Fond d`écran</string>
+	<string name="app_name_dev">Fond d`écran</string>
+	<string name="homescreen">Écran d`accueil</string>
+	<string name="lockscreen">Écran verrouillé</string>
+	<string name="action_settings">Réglages</string>
+	<string name="setwallpaper">Définir le papier peint</string>
+	<string name="nodescription">Pas de description!</string>
+	<string name="previewwallpaper">PreviewWallpaper</string>
+	<string name="unknownresolution">Résolution inconnue</string>
+	<string name="search_note">S`il vous plaît entrer le contenu de la recherche</string>
+	<string name="cancelcollectiontips">Annuler les astuces de collecte!</string>
+	<string name="cancelcollectiontipscontent">Êtes-vous sûr de vouloir annuler cette collection de papiers peints?</string>
+	<string name="next">Suivant</string>
+	<string name="isee">je vois</string>
+	<string name="cancel">Annuler</string>
+	<string name="setting">réglage</string>
+	<string name="permissionprompt">Demande d`autorisation</string>
+	<string name="cancelwallpaperdownload">Annuler le téléchargement de papier peint!</string>
+	<string name="cancelwallpapersettings">Annuler les paramètres de fond d`écran!</string>
+	<string name="failedtodownloadwallpaper">Impossible de télécharger le papier peint!</string>
+	<string name="settingwallpapersuccessfully">Mise en place du papier peint avec succès!</string>
+	<string name="successfuldownloadofwallpaper">Téléchargement réussi de fond d`écran!</string>
+	<string name="settinglockwallpapersuccessfully">Réglage du papier peint de verrouillage avec succès!</string>
+	<string name="settingsystemwallpapersuccessfully">Réglage du papier peint du système avec succès!</string>
+	<string name="downloadingwallpaper">Téléchargement du fond d`écran actuel, attendez un instant!</string>
+	<string name="errorsencounteredindownloadingwallpaper">Erreurs rencontrées lors du téléchargement du papier peint!</string>
+	<string name="waitingfordownload">Le fond d`écran actuel est en attente de téléchargement, veuillez patienter un instant!</string>
+	<string name="rationaleofpermission">Utiliser cette fonction nécessite l`autorisation WRITE et READ. Veuillez accorder cette autorisation ensuite!</string>
+	<string name="foreverrejectedofpermission">Utiliser cette fonction nécessite l`autorisation WRITE et READ, veuillez accorder cette autorisation!</string>
+	<string name="rejectedofpermission">Utiliser cette fonction nécessite les autorisations WRITE et READ, sinon vous ne pouvez pas utiliser cette fonction!</string>
+</resources>

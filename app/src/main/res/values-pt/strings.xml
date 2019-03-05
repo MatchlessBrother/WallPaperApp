@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="style">Estilo</string>
+	<string name="bothscreen">Ambos</string>
+	<string name="app_name">Papel de parede</string>
+	<string name="wallpaper">Papel de parede</string>
+	<string name="app_name_dev">Papel de parede</string>
+	<string name="homescreen">Tela inicial</string>
+	<string name="lockscreen">Tela de bloqueio</string>
+	<string name="action_settings">Definições</string>
+	<string name="setwallpaper">Definir papel de parede</string>
+	<string name="nodescription">Nenhuma descrição!</string>
+	<string name="previewwallpaper">PreviewWallpaper</string>
+	<string name="unknownresolution">Resolução Desconhecida</string>
+	<string name="search_note">Por favor insira o conteúdo da pesquisa</string>
+	<string name="cancelcollectiontips">Cancelar dicas de coleção!</string>
+	<string name="cancelcollectiontipscontent">Tem certeza de que deseja cancelar esta coleção de papel de parede?</string>
+	<string name="next">Próximo</string>
+	<string name="isee">Entendo</string>
+	<string name="cancel">Cancelar</string>
+	<string name="setting">configuração</string>
+	<string name="permissionprompt">Prompt de permissão</string>
+	<string name="cancelwallpaperdownload">Cancelar o download do papel de parede!</string>
+	<string name="cancelwallpapersettings">Cancelar as configurações do papel de parede!</string>
+	<string name="failedtodownloadwallpaper">Falha ao baixar o papel de parede!</string>
+	<string name="settingwallpapersuccessfully">Definir papel de parede com sucesso!</string>
+	<string name="successfuldownloadofwallpaper">Download bem sucedido de papel de parede!</string>
+	<string name="settinglockwallpapersuccessfully">Definir bloqueio de papel de parede com sucesso!</string>
+	<string name="settingsystemwallpapersuccessfully">Definir papel de parede do sistema com sucesso!</string>
+	<string name="downloadingwallpaper">Baixando o papel de parede atual, por favor, espere um momento!</string>
+	<string name="errorsencounteredindownloadingwallpaper">Erros encontrados no download de papel de parede!</string>
+	<string name="waitingfordownload">O papel de parede atual está esperando por download, aguarde um momento!</string>
+	<string name="rationaleofpermission">Use esta função precisa requer permissão de permissão WRITE e READ, por favor conceda esta permissão em seguida!</string>
+	<string name="foreverrejectedofpermission">Use esta função precisa requer permissão de permissão ESCRITA e LEIA, por favor conceda esta permissão!</string>
+	<string name="rejectedofpermission">Use esta função precisa requer permissão de permissão WRITE e READ, caso contrário você não pode usar esta função!</string>
+</resources>

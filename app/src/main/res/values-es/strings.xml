@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="style">Estilo</string>
+	<string name="bothscreen">Ambos</string>
+	<string name="app_name">Papel pintado</string>
+	<string name="wallpaper">Papel pintado</string>
+	<string name="app_name_dev">Papel pintado</string>
+	<string name="homescreen">Pantalla de inicio</string>
+	<string name="lockscreen">Bloquear pantalla</string>
+	<string name="action_settings">Ajustes</string>
+	<string name="setwallpaper">Establecer fondo de pantalla</string>
+	<string name="nodescription">¡Sin descripción!</string>
+	<string name="previewwallpaper">Vista previa</string>
+	<string name="unknownresolution">Resolución desconocida</string>
+	<string name="search_note">Por favor ingrese el contenido de búsqueda</string>
+	<string name="cancelcollectiontips">Cancelar consejos de colección!</string>
+	<string name="cancelcollectiontipscontent">¿Seguro que quieres cancelar esta colección de fondos?</string>
+	<string name="next">Siguiente</string>
+	<string name="isee">Veo</string>
+	<string name="cancel">Cancelar</string>
+	<string name="setting">ajuste</string>
+	<string name="permissionprompt">Solicitud de permiso</string>
+	<string name="cancelwallpaperdownload">Cancelar la descarga del fondo de pantalla!</string>
+	<string name="cancelwallpapersettings">Cancelar la configuración del fondo de pantalla!</string>
+	<string name="failedtodownloadwallpaper">Error al descargar el fondo de pantalla!</string>
+	<string name="settingwallpapersuccessfully">Configuración de fondo de pantalla con éxito!</string>
+	<string name="successfuldownloadofwallpaper">Descarga exitosa de fondo de pantalla!</string>
+	<string name="settinglockwallpapersuccessfully">Configuración de bloqueo de fondo de pantalla con éxito!</string>
+	<string name="settingsystemwallpapersuccessfully">Configuración del fondo de pantalla del sistema con éxito!</string>
+	<string name="downloadingwallpaper">Descargando el fondo de pantalla actual, por favor espere un momento!</string>
+	<string name="errorsencounteredindownloadingwallpaper">Errores encontrados en la descarga de fondos de escritorio!</string>
+	<string name="waitingfordownload">El fondo de pantalla actual está a la espera de ser descargado, ¡espere un momento!</string>
+	<string name="rationaleofpermission">Para usar esta función, se requiere el permiso de concesión WRITE y READ, por favor, conceda este permiso a continuación</string>
+	<string name="foreverrejectedofpermission">El uso de esta función requiere el permiso de concesión WRITE y READ, por favor conceda este permiso</string>
+	<string name="rejectedofpermission">El uso de esta función requiere el permiso de concesión WRITE y READ;</string>
+</resources>

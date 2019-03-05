@@ -33,10 +33,7 @@ public class MemoryUtils
 	/****************检测SD卡是否安装***************/
 	public static final boolean whetherHasTheSDcard()
 	{
-		if(null != Environment.getExternalStorageState() && Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState()))
-			return true;
-		else
-			return false;
+        return null != Environment.getExternalStorageState() && Environment.MEDIA_MOUNTED.equals(Environment.getExternalStorageState());
 	}
 
 	/**获取最佳存储路径，有外置内存则返回外置内存的根目录，否则返回内置内存的根目录*/
@@ -110,9 +107,9 @@ public class MemoryUtils
 		try
 		{
 			/**通过反射的方式来回调StorageManager.getVolumeList()方法，从而得到当前手机所有的挂载点信息**/
-			Method getVolumeListMethod = StorageManager.class.getMethod("getVolumeList", new Class<?>[]{});
+			Method getVolumeListMethod = StorageManager.class.getMethod("getVolumeList");
 			getVolumeListMethod.setAccessible(true);
-			Object[] resultInvokes = (Object[]) getVolumeListMethod.invoke(storageManager, new Object[]{});
+			Object[] resultInvokes = (Object[]) getVolumeListMethod.invoke(storageManager);
 			if (resultInvokes != null)
 			{
 				StorageInfo storageInfo = null;
@@ -120,8 +117,8 @@ public class MemoryUtils
 				for (int index = 0; index < resultInvokes.length; index++)
 				{
 					Object obj = resultInvokes[index];
-					Method getPathMethod = obj.getClass().getMethod("getPath", new Class[0]);
-					String path = (String) getPathMethod.invoke(obj, new Object[0]);
+					Method getPathMethod = obj.getClass().getMethod("getPath");
+					String path = (String) getPathMethod.invoke(obj);
 					storageInfo = new StorageInfo(path);
 					File file = new File(storageInfo.mPath);
 					if (file.exists() && file.isDirectory() && file.canWrite())
@@ -133,8 +130,8 @@ public class MemoryUtils
 
 						if (storageInfo.isMounted())
 						{
-							Method isRemovableMethod = obj.getClass().getMethod("isRemovable", new Class[0]);
-							storageInfo.mRemoveable = ((Boolean) isRemovableMethod.invoke(obj, new Object[0])).booleanValue();
+							Method isRemovableMethod = obj.getClass().getMethod("isRemovable");
+							storageInfo.mRemoveable = ((Boolean) isRemovableMethod.invoke(obj)).booleanValue();
 							storageList.add(storageInfo);
 						}
 					}

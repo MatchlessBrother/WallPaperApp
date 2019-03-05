@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="style">Stile</string>
+	<string name="bothscreen">Tutti e due</string>
+	<string name="app_name">Sfondo</string>
+	<string name="wallpaper">Sfondo</string>
+	<string name="app_name_dev">Sfondo</string>
+	<string name="homescreen">Schermo di casa</string>
+	<string name="lockscreen">Blocca schermo</string>
+	<string name="action_settings">impostazioni</string>
+	<string name="setwallpaper">Imposta sfondo</string>
+	<string name="nodescription">Nessuna descrizione!</string>
+	<string name="previewwallpaper">PreviewWallpaper</string>
+	<string name="unknownresolution">Risoluzione sconosciuta</string>
+	<string name="search_note">Si prega di inserire il contenuto di ricerca</string>
+	<string name="cancelcollectiontips">Annulla suggerimenti sulla raccolta!</string>
+	<string name="cancelcollectiontipscontent">Sei sicuro di voler cancellare questa collezione di sfondi?</string>
+	<string name="next">Il prossimo</string>
+	<string name="isee">Vedo</string>
+	<string name="cancel">Annulla</string>
+	<string name="setting">ambientazione</string>
+	<string name="permissionprompt">Richiesta di autorizzazione</string>
+	<string name="cancelwallpaperdownload">Annulla il download dello sfondo!</string>
+	<string name="cancelwallpapersettings">Annulla le impostazioni dello sfondo!</string>
+	<string name="failedtodownloadwallpaper">Download dello sfondo non riuscito!</string>
+	<string name="settingwallpapersuccessfully">Impostazione dello sfondo con successo!</string>
+	<string name="successfuldownloadofwallpaper">Download riuscito di sfondi!</string>
+	<string name="settinglockwallpapersuccessfully">Impostazione dello sfondo bloccato con successo!</string>
+	<string name="settingsystemwallpapersuccessfully">Impostazione dello sfondo del sistema con successo!</string>
+	<string name="downloadingwallpaper">Scarica lo sfondo corrente, per favore aspetta un attimo!</string>
+	<string name="errorsencounteredindownloadingwallpaper">Errori incontrati durante il download dello sfondo!</string>
+	<string name="waitingfordownload">Lo sfondo attuale è in attesa di download, per favore aspetta un attimo!</string>
+	<string name="rationaleofpermission">Utilizzare questa funzione richiede il permesso di concessione WRITE e READ, si prega di concedere questa autorizzazione dopo!</string>
+	<string name="foreverrejectedofpermission">Utilizzare questa funzione richiede il permesso di concessione WRITE e READ, si prega di concedere questa autorizzazione!</string>
+	<string name="rejectedofpermission">Utilizzare questa funzione richiede l`autorizzazione di WRITE e READ, altrimenti non è possibile utilizzare questa funzione!</string>
+</resources>

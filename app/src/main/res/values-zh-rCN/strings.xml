@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="style">风格</string>
+	<string name="app_name">墙纸</string>
+	<string name="wallpaper">墙纸</string>
+	<string name="app_name_dev">墙纸</string>
+	<string name="homescreen">主壁纸</string>
+	<string name="lockscreen">锁屏壁纸</string>
+	<string name="action_settings">设置</string>
+	<string name="setwallpaper">设置壁纸</string>
+	<string name="nodescription">没有说明！</string>
+	<string name="search_note">请输入搜索内容</string>
+	<string name="bothscreen">主壁纸加锁屏壁纸</string>
+	<string name="unknownresolution">未知的决议</string>
+	<string name="previewwallpaper">PreviewWallpaper</string>
+	<string name="cancelcollectiontips">取消收藏提示！</string>
+	<string name="cancelcollectiontipscontent">你确定要取消这个壁纸集吗？</string>
+	<string name="next">下一个</string>
+	<string name="isee">我知道了</string>
+	<string name="cancel">取消</string>
+	<string name="setting">设置</string>
+	<string name="permissionprompt">权限提示</string>
+	<string name="cancelwallpaperdownload">取消壁纸下载！</string>
+	<string name="cancelwallpapersettings">取消壁纸设置！</string>
+	<string name="failedtodownloadwallpaper">无法下载壁纸！</string>
+	<string name="settingwallpapersuccessfully">成功设置壁纸！</string>
+	<string name="successfuldownloadofwallpaper">成功下载壁纸！</string>
+	<string name="settinglockwallpapersuccessfully">成功设置锁定壁纸！</string>
+	<string name="settingsystemwallpapersuccessfully">成功设置系统壁纸！</string>
+	<string name="downloadingwallpaper">下载当前壁纸，请稍等！</string>
+	<string name="errorsencounteredindownloadingwallpaper">下载壁纸时遇到错误！</string>
+	<string name="waitingfordownload">目前壁纸正在等待下载，请稍等！</string>
+	<string name="rationaleofpermission">使用此功能需要WRITE和READ授权许可，请接下来授予此权限！</string>
+	<string name="foreverrejectedofpermission">使用此功能需要WRITE和READ授权许可，请授予此权限！</string>
+	<string name="rejectedofpermission">使用此功能需要WRITE和READ授权权限，否则您无法使用此功能！</string>
+</resources>

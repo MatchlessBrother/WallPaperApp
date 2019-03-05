@@ -21,14 +21,9 @@ import android.util.DisplayMetrics;
 import android.widget.RelativeLayout;
 import android.content.DialogInterface;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.NonNull;
-import com.liulishuo.okdownload.DownloadTask;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.AnimationDrawable;
-import com.daimajia.numberprogressbar.NumberProgressBar;
-import com.liulishuo.okdownload.core.cause.ResumeFailedCause;
 import com.yuan.devlibrary._11___Widget.promptBox.BaseDialog;
-import com.liulishuo.okdownload.core.listener.DownloadListener3;
 import com.yuan.devlibrary._11___Widget.promptBox.BaseProgressDialog;
 
 /***弹出各样提示框的工具**/
@@ -59,7 +54,7 @@ public class PromptBoxUtils
         toast.setView(layout);
         toast.setGravity(gravity,0,12);
         toast.setDuration(during);
-        TextView toastTextView = (TextView) layout.findViewById(R.id.toastview);
+        TextView toastTextView = layout.findViewById(R.id.toastview);
         toastTextView.setTextSize(strTypeValue,strSize);
         if (str != null)
         {
@@ -98,7 +93,7 @@ public class PromptBoxUtils
         if(themeStyleValue == 1)
         {
             contentView = ResourceUtils.generateView(context,R.layout.inflater_progressdialogdefault);
-            imageView = (ImageView) contentView.findViewById(R.id.defaultthemeimg);
+            imageView = contentView.findViewById(R.id.defaultthemeimg);
             animation = new AnimationDrawable();
             animation.addFrame(context.getResources().getDrawable(R.drawable.progressdialogdefault3),52);
             animation.addFrame(context.getResources().getDrawable(R.drawable.progressdialogdefault7),52);
@@ -113,7 +108,7 @@ public class PromptBoxUtils
         else
         {
             contentView = ResourceUtils.generateView(context,R.layout.inflater_progressdialogplane);
-            imageView = (ImageView) contentView.findViewById(R.id.planethemeimg);
+            imageView = contentView.findViewById(R.id.planethemeimg);
             animation = new AnimationDrawable();
             animation.addFrame(context.getResources().getDrawable(R.drawable.progressdialogplane3),52);
             animation.addFrame(context.getResources().getDrawable(R.drawable.progressdialogplane9),52);
@@ -134,10 +129,7 @@ public class PromptBoxUtils
             {
                 if(keyCode == KeyEvent.KEYCODE_BACK)
                 {
-                    if(isCanceledOnTouchOutside)
-                        return false;
-                    else
-                        return true;
+                    return !isCanceledOnTouchOutside;
                 }
                 return false;
             }
@@ -181,12 +173,12 @@ public class PromptBoxUtils
 
         View view = LayoutInflater.from(context).inflate(R.layout.inflater_permissiondialogdefault, null);
         permissionDialog.setContentView(view);
-        TextView content = (TextView)view.findViewById(R.id.permissiondialog_content);
+        TextView content = view.findViewById(R.id.permissiondialog_content);
         content.setText(contentStr.trim());
         content.setTextSize(contentStrSizeType,contentStrSize);
         content.setTextColor(contentStrColor);
         content.setBackgroundDrawable(contentStrBackground);
-        TextView btn = (TextView)view.findViewById(R.id.permissiondialog_btn);
+        TextView btn = view.findViewById(R.id.permissiondialog_btn);
         btn.setText(btnStr.trim());
         btn.setTextSize(btnStrSizeType,btnStrSize);
         btn.setTextColor(btnStrColor);
@@ -268,24 +260,24 @@ public class PromptBoxUtils
 
         View view = LayoutInflater.from(context).inflate(R.layout.inflater_promptdialogdefault, null);
         promptDialog.setContentView(view);
-        TextView title = (TextView)view.findViewById(R.id.promptdialog_title);
+        TextView title = view.findViewById(R.id.promptdialog_title);
         title.setText(titleStr.trim());
         title.setTextSize(titleStrSizeType,titleStrSize);
         title.setTextColor(titleStrColor);
         title.setVisibility(titleStrVisible);
         title.setBackgroundDrawable(titleStrBackground);
-        TextView content = (TextView)view.findViewById(R.id.promptdialog_content);
+        TextView content = view.findViewById(R.id.promptdialog_content);
         content.setText(contentStr.trim());
         content.setTextSize(contentStrSizeType,contentStrSize);
         content.setTextColor(contentStrColor);
         content.setBackgroundDrawable(contentStrBackground);
-        TextView trueBtn = (TextView)view.findViewById(R.id.promptdialog_true);
+        TextView trueBtn = view.findViewById(R.id.promptdialog_true);
         trueBtn.setText(trueStr.trim());
         trueBtn.setTextSize(trueStrSizeType,trueStrSize);
         trueBtn.setTextColor(trueStrColor);
         trueBtn.setVisibility(trueStrVisible);
         trueBtn.setBackgroundDrawable(trueStrBackground);
-        TextView falseBtn = (TextView)view.findViewById(R.id.promptdialog_false);
+        TextView falseBtn = view.findViewById(R.id.promptdialog_false);
         falseBtn.setText(falseStr.trim());
         falseBtn.setTextSize(falseStrSizeType,falseStrSize);
         falseBtn.setTextColor(falseStrColor);
@@ -321,10 +313,7 @@ public class PromptBoxUtils
             {
                 if(keyCode == KeyEvent.KEYCODE_BACK)
                 {
-                    if(isCanceledOnTouchOutside)
-                        return false;
-                    else
-                        return true;
+                    return !isCanceledOnTouchOutside;
                 }
                 return false;
             }
@@ -343,125 +332,5 @@ public class PromptBoxUtils
         params.gravity = Gravity.CENTER;
         window.setAttributes(params);
         return promptDialog;
-    }
-
-    /**------------------------------------------------------------------------------------------**/
-    /**------------------------------------------------------------------------------------------**/
-    /**------------------------------------------------------------------------------------------**/
-    /*************************************隐藏升级弹出框*******************************************/
-    public static void dismissUpdateDialog(BaseProgressDialog updateDialog)
-    {
-        if (null != updateDialog && updateDialog.isShowing())
-            updateDialog.dismiss();
-    }
-
-    /********************************显示升级弹出框并开始升级**************************************/
-    public static BaseProgressDialog showUpdateDialog(final Context context,final boolean isCancel,final String downloadPath)
-    {
-        View contentView = LayoutInflater.from(context).inflate(R.layout.inflater_updatedialog,null);
-        final NumberProgressBar numberProgressBar = contentView.findViewById(R.id.updatedialog_progressbar);
-        final BaseProgressDialog updateDialog = new BaseProgressDialog(context);
-        updateDialog.setCanceledOnTouchOutside(isCancel);
-        updateDialog.setCancelable(isCancel);
-        updateDialog.show();
-        /******************************************************************************************/
-        /******************************************************************************************/
-        updateDialog.setContentView(contentView);
-        updateDialog.setMessage("正在更新，请稍等...");
-        updateDialog.setOnKeyListener(new DialogInterface.OnKeyListener()
-        {
-            public boolean onKey(DialogInterface dialog, int keyCode, KeyEvent event)
-            {
-                if(keyCode == KeyEvent.KEYCODE_BACK)
-                {
-                    if(isCancel)
-                        return false;
-                    else
-                        return true;
-                }
-                return false;
-            }
-        });
-        Window window = updateDialog.getWindow();
-        window.getDecorView().setPadding(0,0,0,0);
-        window.getDecorView().setBackgroundResource(R.color.transparent);
-        DisplayMetrics displayMetrics = new DisplayMetrics();
-        ((WindowManager)context.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getMetrics(displayMetrics);
-        WindowManager.LayoutParams params = window.getAttributes();
-        if(displayMetrics.widthPixels <= 1480)
-            params.width = displayMetrics.widthPixels - 160;
-        else
-            params.width = displayMetrics.widthPixels / 2;
-        params.gravity = Gravity.CENTER;
-        window.setAttributes(params);
-        /******************************************************************************************/
-        /******************************************************************************************/
-        DownloadListener3 downloadListener = null;
-        numberProgressBar.setProgress(0);
-        numberProgressBar.setMax(100);
-        downloadListener = new DownloadListener3()
-        {
-            protected void started(@NonNull DownloadTask task)
-            {
-                numberProgressBar.setProgress(0);
-
-            }
-
-            protected void warn(@NonNull DownloadTask task)
-            {
-                PromptBoxUtils.showToast(context,"下载最新版本软件遇见错误，请稍后再试",18f,TypedValue.COMPLEX_UNIT_SP,Toast.LENGTH_SHORT);
-                dismissUpdateDialog(updateDialog);
-            }
-
-            protected void canceled(@NonNull DownloadTask task)
-            {
-                PromptBoxUtils.showToast(context,"已取消软件更新",18f,TypedValue.COMPLEX_UNIT_SP,Toast.LENGTH_SHORT);
-                dismissUpdateDialog(updateDialog);
-            }
-
-            protected void completed(@NonNull DownloadTask task)
-            {
-                if(!task.getFile().exists())
-                {
-                    try
-                    {
-                        task.getFile().createNewFile();
-                    }
-                    catch (IOException e)
-                    {
-                        e.printStackTrace();
-                    }
-                }
-                dismissUpdateDialog(updateDialog);
-                BuildVariantsUtils.install(context,task.getFile().getAbsolutePath().trim());
-            }
-
-            protected void error(@NonNull DownloadTask task, @NonNull Exception e)
-            {
-                PromptBoxUtils.showToast(context,"下载最新版本软件遇见错误，请稍后再试",18f,TypedValue.COMPLEX_UNIT_SP,Toast.LENGTH_SHORT);
-                dismissUpdateDialog(updateDialog);
-            }
-
-            public void retry(@NonNull DownloadTask task, @NonNull ResumeFailedCause cause)
-            {
-
-            }
-
-            public void progress(@NonNull DownloadTask task, long currentOffset, long totalLength)
-            {
-                numberProgressBar.setProgress((int)(((float)currentOffset / (float)totalLength) * 100));
-            }
-
-            public void connected(@NonNull DownloadTask task, int blockCount, long currentOffset, long totalLength)
-            {
-
-            }
-        };
-        String fileName = "jjsh_two.apk";
-        DownloadTask downloadTask = new DownloadTask.Builder(
-        downloadPath,MemoryUtils.getBestFilesPath(context),fileName).
-        setMinIntervalMillisCallbackProcess(30).setPassIfAlreadyCompleted(false).build();
-        downloadTask.enqueue(downloadListener);
-        return updateDialog;
     }
 }
